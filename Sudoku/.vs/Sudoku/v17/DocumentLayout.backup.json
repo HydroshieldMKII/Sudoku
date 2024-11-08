@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77C79617-D72B-4A4A-855C-D64E7BED0C53}|SudokuTest\\SudokuTest.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudokutest\\validationstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C79617-D72B-4A4A-855C-D64E7BED0C53}|SudokuTest\\SudokuTest.csproj|solutionrelative:sudokutest\\validationstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\validations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\validations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C79617-D72B-4A4A-855C-D64E7BED0C53}|SudokuTest\\SudokuTest.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudokutest\\validationstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77C79617-D72B-4A4A-855C-D64E7BED0C53}|SudokuTest\\SudokuTest.csproj|solutionrelative:sudokutest\\validationstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -42,18 +42,17 @@
               "RelativeToolTip": "Sudoku\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:32:59.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T14:32:59.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Validations.cs",
               "DocumentMoniker": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Validations.cs",
               "RelativeDocumentMoniker": "Sudoku\\Validations.cs",
               "ToolTip": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Validations.cs",
               "RelativeToolTip": "Sudoku\\Validations.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwCEAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T14:07:29.13Z",
               "EditorCaption": ""
@@ -72,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ValidationsTest.cs",
               "DocumentMoniker": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\SudokuTest\\ValidationsTest.cs",
               "RelativeDocumentMoniker": "SudokuTest\\ValidationsTest.cs",
               "ToolTip": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\SudokuTest\\ValidationsTest.cs",
               "RelativeToolTip": "SudokuTest\\ValidationsTest.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAkwJIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T00:21:02.108Z",
               "EditorCaption": ""

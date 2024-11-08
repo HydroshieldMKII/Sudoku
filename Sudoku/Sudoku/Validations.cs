@@ -11,48 +11,69 @@ namespace Sudoku
     {
         public bool IsValid(int[,] grid, int row, int col)
         {
-            // Vérifie si le nombre est déjà dans la ligne
-            for (int i = 0; i < 9; i++)
+            if (IsNumberInRow(grid, row, col))
             {
-                if (i != col && grid[row, i] == grid[row, col])
-                {
-                    Console.WriteLine("Le nombre est déjà dans la ligne");
-                    return false;
-                }
+                Console.WriteLine("Le nombre est déjà dans la ligne");
+                return false;
             }
 
-            // Vérifie si le nombre est déjà dans la colonne
-            for (int i = 0; i < 9; i++)
+            if (IsNumberInColumn(grid, row, col))
             {
-                if (i != row && grid[i, col] == grid[row, col])
-                {
-                    Console.WriteLine("Le nombre est déjà dans la colonne");
-                    return false;
-                }
+                Console.WriteLine("Le nombre est déjà dans la colonne");
+                return false;
             }
 
-            // Vérifie si le nombre est déjà dans le carré
+            if (IsNumberInSquare(grid, row, col))
+            {
+                Console.WriteLine("Le nombre est déjà dans le carré");
+                return false;
+            }
+
+            return true;
+        }
+
+        private bool IsNumberInRow(int[,] grid, int row, int col)
+        {
+            int number = grid[row, col];
+            for (int i = 0; i < 9; i++)
+            {
+                if (i != col && grid[row, i] == number)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool IsNumberInColumn(int[,] grid, int row, int col)
+        {
+            int number = grid[row, col];
+            for (int i = 0; i < 9; i++)
+            {
+                if (i != row && grid[i, col] == number)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool IsNumberInSquare(int[,] grid, int row, int col)
+        {
+            int number = grid[row, col];
             int startRow = row - row % 3;
             int startCol = col - col % 3;
             for (int i = startRow; i < startRow + 3; i++)
             {
                 for (int j = startCol; j < startCol + 3; j++)
                 {
-                    if (i != row && j != col && grid[i, j] == grid[row, col])
+                    if (i != row && j != col && grid[i, j] == number)
                     {
-                        Console.WriteLine("Le nombre est déjà dans le carré");
-                        return false;
+                        return true;
                     }
                 }
             }
-
-            return true;
+            return false;
         }
-
-        //public bool IsSafe(int[,] grid, int row, int col, int num)
-        //{
-        //    throw new NotImplementedException();
-        //    //return IsValid(grid, row, col) && !IsInRow(grid, row, num) && !IsInCol(grid, col, num) && !IsInBox(grid, row - row % 3, col - col % 3, num);
-        //}
     }
 }
