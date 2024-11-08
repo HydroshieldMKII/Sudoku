@@ -1,4 +1,5 @@
-﻿namespace SudokuTest
+﻿using Sudoku;
+namespace SudokuTest
 {
     [TestClass]
     public class ValidationsTest
@@ -14,7 +15,8 @@
 
             // Act
             // Essayer de placer dans grid[1, 7] = 1;
-            result = true;
+            Validations validation = new Validations();
+            result = validation.IsValid(grid, 1, 7);
 
             // Assert
             Assert.IsFalse(result);
@@ -30,7 +32,8 @@
 
             // Act
             // Essayer de placer dans grid[7, 1] = 1;
-            result = true;
+            Validations validation = new Validations();
+            result = validation.IsValid(grid, 7, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -68,6 +71,8 @@
             Assert.IsFalse(result);
         }
 
+        // IsValid
+
         /// ================= IsSaved =================
         [TestMethod]
         public void IsValid_FalseIfNumInLine()
@@ -79,7 +84,9 @@
 
             // Act
             // Essayer de placer dans grid[1, 7] = 1;
-            result = true;
+            //Validations validation = new Validations();
+            //grid[1, 7] = 1;
+            //result = validation.IsValid(grid, 1, 7);
 
             // Assert
             Assert.IsFalse(result);
@@ -95,7 +102,9 @@
 
             // Act
             // Essayer de placer dans grid[7, 1] = 1;
-            result = true;
+            //Validations validation = new Validations();
+            //grid[7, 1] = 1;
+            //result = validation.IsValid(grid, 7, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -111,7 +120,9 @@
 
             // Act
             // Essayer de placer dans grid[2, 1] = 1;
-            result = true;
+            //Validations validation = new Validations();
+            //grid[2, 1] = 1;
+            //result = validation.IsValid(grid, 2, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -127,10 +138,12 @@
 
             // Act
             // Essayer de placer dans grid[4, 4] = 1; Dans une grille vide
-            result = true;
+            //Validations validations = new Validations();
+            //grid[4, 4] = 1;
+            //result = validations.IsValid(grid, 4, 4);
 
             // Assert
-            Assert.IsFalse(result);
+            Assert.IsTrue(result);
         }
     }
 }
