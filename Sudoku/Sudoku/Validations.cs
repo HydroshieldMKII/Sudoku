@@ -32,9 +32,9 @@ namespace Sudoku
             return true;
         }
 
-        private bool IsSafe(int[,] grid, int row, int col, int number)
+        public bool IsSafe(int[,] grid, int row, int col, int number)
         {
-            //Check if the number is already in the row
+            // Check if the number is already in the row
             for (int i = 0; i < 9; i++)
             {
                 if (grid[row, i] == number)
@@ -43,7 +43,7 @@ namespace Sudoku
                 }
             }
 
-            //Check if the number is already in the column
+            // Check if the number is already in the column
             for (int i = 0; i < 9; i++)
             {
                 if (grid[i, col] == number)
@@ -52,7 +52,7 @@ namespace Sudoku
                 }
             }
 
-            //Check if the number is already in the square
+            // Check if the number is already in the square
             int startRow = row - row % 3;
             int startCol = col - col % 3;
             for (int i = startRow; i < startRow + 3; i++)
@@ -65,8 +65,10 @@ namespace Sudoku
                     }
                 }
             }
+
             return true;
         }
+
 
         private bool IsNumberInRow(int[,] grid, int row, int col)
         {

@@ -16,7 +16,7 @@ namespace SudokuTest
             // Act
             // Essayer de placer dans grid[1, 7] = 1;
             Validations validation = new Validations();
-            result = validation.IsValid(grid, 1, 7);
+            result = validation.IsSafe(grid, 1, 7, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -33,7 +33,7 @@ namespace SudokuTest
             // Act
             // Essayer de placer dans grid[7, 1] = 1;
             Validations validation = new Validations();
-            result = validation.IsValid(grid, 7, 1);
+            result = validation.IsSafe(grid, 7, 1, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -49,7 +49,8 @@ namespace SudokuTest
 
             // Act
             // Essayer de placer dans grid[2, 1] = 1;
-            result = true;
+            Validations validation = new Validations();
+            result = validation.IsSafe(grid, 2, 1, 1);
 
             // Assert
             Assert.IsFalse(result);
@@ -60,16 +61,18 @@ namespace SudokuTest
         {
             // Arrange
             int[,] grid = new int[9, 9];
-            grid[1, 1] = 1; 
+            grid[1, 1] = 1;
             bool result;
 
             // Act
             // Essayer de placer dans grid[4, 4] = 1; Dans une grille vide
-            result = true;
+            Validations validation = new Validations();
+            result = validation.IsSafe(grid, 4, 4, 1);
 
             // Assert
-            Assert.IsFalse(result);
+            Assert.IsTrue(result);
         }
+
 
         // IsValid
 
