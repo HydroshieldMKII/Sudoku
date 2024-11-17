@@ -80,6 +80,7 @@ namespace SudokuTest
             }
         }
 
+        [TestMethod]
         public void FillDiagonal_Filled()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
@@ -89,6 +90,7 @@ namespace SudokuTest
             try
             {
                 // Remplir les 3 carrés diagonaux
+                sudoku.FillDiagonal();
             }
             catch (Exception ex)
             {
@@ -97,6 +99,12 @@ namespace SudokuTest
 
             // Assert
             Assert.IsNull(expectedExcetpion);
+
+            // Vérifier que les 3 carrés diagonaux sont remplis
+            for (int i = 0; i < 9; i += 3)
+            {
+                Assert.AreEqual(1, sudoku.Grid[i, i]);
+            }
         }
     }
 }

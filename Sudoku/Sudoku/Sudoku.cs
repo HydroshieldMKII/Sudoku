@@ -74,6 +74,7 @@ namespace Sudoku
 
         public void FillDiagonal()
         {
+            //3 carrés doivent avoir reçu des valeurs
             for (int i = 0; i < 9; i += 3)
             {
                 FillBox(grid, i, i);
