@@ -1,3 +1,4 @@
+using Sudoku;
 namespace SudokuTest
 {
     [TestClass]
@@ -8,12 +9,14 @@ namespace SudokuTest
         public void FillBox_ValidParamsFalse()
         {
             // Arrange
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             Exception expectedExcetpion = null;
 
             // Act
             try 
             { 
                 // Paramètres row ou col ne correspond pas à un début de carré
+                sudoku.FillBox(sudoku.Grid, 1, 2);
             }
             catch (Exception ex)
             {
@@ -28,12 +31,15 @@ namespace SudokuTest
         public void FillBox_NotEmpty()
         {
             // Arrange
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Grid[0, 0] = 1;
             Exception expectedExcetpion = null;
 
             // Act
             try
             {
                 // Carré déjà remplie avec 1+ valeur(s)
+                sudoku.FillBox(sudoku.Grid, 0, 0);
             }
             catch (Exception ex)
             {
@@ -48,24 +54,31 @@ namespace SudokuTest
         public void FillBox_Filled()
         {
             // Arrange
-            int[,] grid = new int[9, 9];
-            int row = 0;
-            int col = 0;
-            int count = 0;
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception expectedExcetpion = null;
+
 
             // Act
+            try
+            {
+                sudoku.FillBox(sudoku.Grid, 0, 0);
+            }
+            catch (Exception ex)
+            {
+                expectedExcetpion = ex;
+            }
 
             // Assert
-            if (grid[0, 0] != 0) count++;
-            if (grid[0, 1] != 0) count++;
-            if (grid[0, 2] != 0) count++;
-            if (grid[1, 0] != 0) count++;
-            if (grid[1, 1] != 0) count++;
-            if (grid[1, 2] != 0) count++;
-            if (grid[2, 0] != 0) count++;
-            if (grid[2, 1] != 0) count++;
-            if (grid[2, 2] != 0) count++;
-            Assert.AreEqual(count, 9);
+            Assert.IsNull(expectedExcetpion);
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Assert.AreNotEqual(0, sudoku.Grid[i, j]);
+                }
+            }
+
         }
     }
 }
