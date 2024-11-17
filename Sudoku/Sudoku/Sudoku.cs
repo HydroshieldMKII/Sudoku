@@ -71,5 +71,13 @@ namespace Sudoku
                 }
             }
         }
+
+        public void FillDiagonal()
+        {
+            for (int i = 0; i < 9; i += 3)
+            {
+                FillBox(grid, i, i);
+            }
+        }
     }
 }
