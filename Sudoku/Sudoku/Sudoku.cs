@@ -43,5 +43,33 @@ namespace Sudoku
             get { return difficulty; }
             set { difficulty = value; }
         }
+
+        public void FillBox(int[,] grid, int row, int col)
+        {
+            if (row % 3 != 0 || col % 3 != 0)
+            {
+                throw new ArgumentException("Rangée et colonne doivent être un multiples de 3.");
+            }
+
+            for (int i = row; i < row + 3; i++)
+            {
+                for (int j = col; j < col + 3; j++)
+                {
+                    if (grid[i, j] != 0)
+                    {
+                        throw new InvalidOperationException("Les grilles doivent être vides.");
+                    }
+                }
+            }
+
+            int value = 1;
+            for (int i = row; i < row + 3; i++)
+            {
+                for (int j = col; j < col + 3; j++)
+                {
+                    grid[i, j] = value++;
+                }
+            }
+        }
     }
 }
