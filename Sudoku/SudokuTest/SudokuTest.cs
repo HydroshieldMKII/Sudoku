@@ -78,7 +78,25 @@ namespace SudokuTest
                     Assert.AreNotEqual(0, sudoku.Grid[i, j]);
                 }
             }
+        }
 
+        public void FillDiagonal_Filled()
+        {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception expectedExcetpion = null;
+
+            // Act
+            try
+            {
+                // Remplir les 3 carrés diagonaux
+            }
+            catch (Exception ex)
+            {
+                expectedExcetpion = ex;
+            }
+
+            // Assert
+            Assert.IsNull(expectedExcetpion);
         }
     }
 }

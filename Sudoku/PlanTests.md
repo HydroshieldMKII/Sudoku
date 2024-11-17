@@ -16,7 +16,7 @@
   - IsGameWon_FalseCellNotValid : Doit retourner faux si partie non complétée
   - IsGameWon_TrueGridCompleted : Doit retourner vrai si partie complétée
 
-- **FillBox (Sudoku)**
+- DONE **FillBox (Sudoku)**
   - FillBox_ValidParamsFalse : Considérant un sudoku de 9 carré, les valeurs reçues par la fonction doivent correspondre à un début de carré 3x3
   - FillBox_NotEmpty : Doit se basé sur un carré qui n'a pas déjà été rempli
   - FillBox_Filled : 3 valeurs ont été saisies dans le carré
