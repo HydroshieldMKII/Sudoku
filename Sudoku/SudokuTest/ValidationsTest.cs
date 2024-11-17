@@ -152,7 +152,7 @@ namespace SudokuTest
         [TestMethod]
         public void IsGameWon_FalseGridNotFull()
         {
-            // Arrange
+            // Arrange - Grid not full
             int[,] grid = new int[9, 9];
             Validations validation = new Validations();
             bool result;
@@ -167,7 +167,7 @@ namespace SudokuTest
         [TestMethod]
         public void IsGameWon_FalseCellNotValid()
         {
-            // Arrange
+            // Arrange - Cell not valid
             int[,] grid = new int[9, 9]
             {
                 {5, 3, 0, 0, 7, 0, 0, 0, 0},
@@ -193,7 +193,7 @@ namespace SudokuTest
         [TestMethod]
         public void IsGameWon_TrueGridCompleted()
         {
-            // Arrange
+            // Arrange - Grid completed
             int[,] grid = new int[9, 9]
             {
                 {5, 3, 4, 6, 7, 8, 9, 1, 2},
