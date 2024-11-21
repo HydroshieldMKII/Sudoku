@@ -5,10 +5,29 @@ namespace SudokuTest
     public class SudokuTest
     {
         [TestMethod]
-        public void GenerateSudokuGrid()
+        public void GenerateSudokuGrid_Difficutly30()
         {
 
         }
+
+        [TestMethod]
+        public void GenerateSudokuGrid_Difficutly40()
+        {
+
+        }
+
+        [TestMethod]
+        public void GenerateSudokuGrid_Difficutly50()
+        {
+
+        }
+
+        [TestMethod]
+        public void GenerateSudokuGrid_Difficutly60()
+        {
+
+        }
+
 
         /// ================= FillBox =================
         [TestMethod]
@@ -30,7 +49,7 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNotNull(expectedExcetpion);
+            Assert.IsNull(expectedExcetpion);
         }
 
         [TestMethod]
@@ -53,7 +72,7 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNotNull(expectedExcetpion);
+            Assert.IsNull(expectedExcetpion);
         }
 
         [TestMethod]
