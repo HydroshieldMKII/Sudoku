@@ -115,12 +115,18 @@ namespace SudokuTest
 
             try
             {
-                // Résoudre la grille ici
+                // Compléter la grille de jeu
+                //sudoku.Grid[0, 0] = 5;
+                //sudoku.Grid[0, 1] = 3;
+                //sudoku.Grid[1, 0] = 6;
+                //sudoku.SolveSudoku();
             }
             catch (Exception ex)
             {
                 exception = ex;
             }
+
+            Assert.IsNull(exception);
         }
 
         [TestMethod]
@@ -131,12 +137,15 @@ namespace SudokuTest
 
             try
             {
-                // Résoudre la grille ici
+                sudoku.GenerateSudokuGrid(30);
+                sudoku.SolveGrid();
             }
             catch (Exception ex)
             {
                 exception = ex;
             }
+
+            Assert.IsNull(exception);
         }
 
         [TestMethod]
@@ -147,12 +156,14 @@ namespace SudokuTest
 
             try
             {
-                // Résoudre la grille ici
+                sudoku.SolveGrid();
             }
             catch (Exception ex)
             {
                 exception = ex;
             }
+
+            Assert.IsNotNull(exception);
         }
 
 

@@ -92,30 +92,30 @@ namespace Sudoku
                 int col = random.Next(0, 9);
 
                 // Si la case est déjà vide, passer à la suivante
-                if (grid[row, col] != 0)
+                if (Grid[row, col] != 0)
                 {
                     // Retinir la valeur de la case
-                    grid[row, col] = 0;
+                    Grid[row, col] = 0;
                     removed++;
                 }
             }
         }
 
-        public bool SolveGrid(int[,] grid)
+        public bool SolveGrid()
         {
             for (int row = 0; row < 9; row++)
             {
                 for (int col = 0; col < 9; col++)
                 {
-                    if (grid[row, col] == 0)
+                    if (Grid[row, col] == 0)
                     {
                         for (int num = 1; num <= 9; num++)
                         {
-                            if (validate.IsSafe(grid, row, col, num))
+                            if (validate.IsSafe(Grid, row, col, num))
                             {
-                                grid[row, col] = num;
+                                Grid[row, col] = num;
 
-                                if (SolveGrid(grid))
+                                if (SolveGrid())
                                 {
                                     return true;
                                 }
@@ -137,10 +137,9 @@ namespace Sudoku
             // Initialiser la grille
             this.grid = new int[9, 9];
             this.difficulty = difficulty;
-
             FillDiagonal();
 
-            if (!SolveGrid(grid))
+            if (!SolveGrid())
             {
                 throw new InvalidOperationException("Erreur lors de la génération de la grille.");
             }
@@ -149,7 +148,7 @@ namespace Sudoku
             {
                 for (int j = 0; j < 9; j++)
                 {
-                    initialGrid[i, j] = grid[i, j];
+                    initialGrid[i, j] = Grid[i, j];
                 }
             }
 

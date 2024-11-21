@@ -22,16 +22,16 @@
   - FillBox_Filled : 3 valeurs ont été saisies dans le carré
 - DONE **FillDiagonal (Sudoku)**
   - FillDiagonal_Filled : 3 carrés doivent avoir reçu des valeurs
-- **GenerateSudokuGrid (Sudoku)**
+- DONE **GenerateSudokuGrid (Sudoku)**
   - GenerateSudokuGrid_Difficutly30 : Le nombre de cases vides doit correspondre à la difficulté
   - GenerateSudokuGrid_Difficutly40 : Le nombre de cases vides doit correspondre à la difficulté
   - GenerateSudokuGrid_Difficutly50 : Le nombre de cases vides doit correspondre à la difficulté
   - GenerateSudokuGrid_Difficutly60 : Le nombre de cases vides doit correspondre à la difficulté
-- **SolveSudoku (Sudoku)**
+- DONE **SolveSudoku (Sudoku)**
   - SolveSudoku_PartiallyResolved : Compléter la grille de jeu
   - SolveSudoku_NewGrid : Compléter la grille de jeu
   - SolveSudoku_EmptyGrid : La grille doit d'abord été chargé
-- **RemoveNumbers (Sudoku)**
+- DONE **RemoveNumbers (Sudoku)**
   - RemoveNumbers_NumbersRemoved40 : Les cases doivent être remises à 0
   - RemoveNumbers_NumbersRemoved50 : Les cases doivent être remises à 0
 - **PlayGrid (Sudoku)**
