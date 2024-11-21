@@ -4,19 +4,20 @@ namespace SudokuTest
     [TestClass]
     public class SudokuTest
     {
-
         [TestMethod]
         public void PlayGrid_InitialValue()
         {
             // Arrange
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             sudoku.Grid[0, 0] = 5; // Initial value
+            sudoku.InitialGrid[0, 0] = 5; // Indiquer que c'est une valeur initiale
             Exception exception = null;
 
             // Act
             try
             {
-                // Jouer un nombre ici
+                // Essayer de modifier la valeur initiale
+                sudoku.PlayGrid("A", 0, 3);
             }
             catch (Exception ex)
             {
@@ -24,8 +25,9 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNull(exception);
-            //Assert.AreEqual(5, sudoku.Grid[0, 0]);
+            Assert.IsNotNull(exception);
+            Assert.IsInstanceOfType(exception, typeof(InvalidOperationException));
+            Assert.AreEqual(5, sudoku.Grid[0, 0]); // La valeur reste inchangée
         }
 
         [TestMethod]
@@ -38,7 +40,8 @@ namespace SudokuTest
             // Act
             try
             {
-                // Jouer la grille ici
+                // Jouer une valeur valide dans une case vide
+                sudoku.PlayGrid("A", 1, 3);
             }
             catch (Exception ex)
             {
@@ -47,7 +50,7 @@ namespace SudokuTest
 
             // Assert
             Assert.IsNull(exception);
-            //Assert.AreEqual(3, sudoku.Grid[0, 1]);
+            Assert.AreEqual(3, sudoku.Grid[0, 1]); // La valeur saisie est correcte
         }
 
         [TestMethod]
@@ -60,7 +63,8 @@ namespace SudokuTest
             // Act
             try
             {
-                // Invalid position ici
+                // Essayer de jouer dans une position invalide
+                sudoku.PlayGrid("J", 10, 4);
             }
             catch (Exception ex)
             {
@@ -68,8 +72,10 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNull(exception);
+            Assert.IsNotNull(exception);
+            Assert.IsInstanceOfType(exception, typeof(ArgumentException));
         }
+
 
         [TestMethod]
         public void RemoveNumbers_NumbersRemoved40()

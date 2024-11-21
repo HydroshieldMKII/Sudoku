@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sudoku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\sudokufile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sudokufile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\sudokufile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|solutionrelative:sudoku\\sudokufile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9A7FB53-18D5-40E8-975D-AE03226A7004}|Sudoku\\Sudoku.csproj|c:\\users\\vbure\\github\\1sy_a24_p4_vb\\sudoku\\sudoku\\validations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "SudokuTest\\SudokuTest.cs",
               "ToolTip": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\SudokuTest\\SudokuTest.cs",
               "RelativeToolTip": "SudokuTest\\SudokuTest.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAD4v4kAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAADwv00AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T00:20:16.73Z",
               "EditorCaption": ""
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Program.cs",
               "RelativeDocumentMoniker": "Sudoku\\Program.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SudokuFile.cs",
               "DocumentMoniker": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\SudokuFile.cs",
               "RelativeDocumentMoniker": "Sudoku\\SudokuFile.cs",
@@ -103,7 +103,7 @@
               "RelativeDocumentMoniker": "Sudoku\\Sudoku.cs",
               "ToolTip": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Sudoku.cs",
               "RelativeToolTip": "Sudoku\\Sudoku.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAewI8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAuwKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T00:17:12.505Z",
               "EditorCaption": ""
@@ -123,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Game.cs",
               "RelativeDocumentMoniker": "Sudoku\\Game.cs",
               "ToolTip": "C:\\Users\\vbure\\Github\\1SY_A24_P4_VB\\Sudoku\\Sudoku\\Game.cs",
               "RelativeToolTip": "Sudoku\\Game.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwEMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T01:07:45.285Z",
               "EditorCaption": ""
