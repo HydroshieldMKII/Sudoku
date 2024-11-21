@@ -5,6 +5,24 @@ namespace SudokuTest
     public class SudokuTest
     {
         [TestMethod]
+        public void SolveSudoku_PartiallyResolved()
+        {
+
+        }
+
+        [TestMethod]
+        public void SolveSudoku_NewGrid()
+        {
+
+        }
+
+        [TestMethod]
+        public void SolveSudoku_EmptyGrid()
+        {
+
+        }
+
+        [TestMethod]
         public void GenerateSudokuGrid_Difficutly30()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
