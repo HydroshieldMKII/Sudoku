@@ -81,7 +81,27 @@ namespace Sudoku
             }
         }
 
-        private bool SolveGrid(int[,] grid)
+        public void RemoveNumbers(int emptyCells)
+        {
+            int removed = 0;
+
+            while (removed < emptyCells)
+            {
+                // Choisir une rangée et une colonne aléatoire
+                int row = random.Next(0, 9);
+                int col = random.Next(0, 9);
+
+                // Si la case est déjà vide, passer à la suivante
+                if (grid[row, col] != 0)
+                {
+                    // Retinir la valeur de la case
+                    grid[row, col] = 0;
+                    removed++;
+                }
+            }
+        }
+
+        public bool SolveGrid(int[,] grid)
         {
             for (int row = 0; row < 9; row++)
             {
