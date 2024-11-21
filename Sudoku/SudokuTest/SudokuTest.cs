@@ -7,25 +7,73 @@ namespace SudokuTest
         [TestMethod]
         public void GenerateSudokuGrid_Difficutly30()
         {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            try
+            {
+                //Generation de la grille ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
         }
 
         [TestMethod]
         public void GenerateSudokuGrid_Difficutly40()
         {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            try
+            {
+                //Generation de la grille ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
         }
 
         [TestMethod]
         public void GenerateSudokuGrid_Difficutly50()
         {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            try
+            {
+                //Generation de la grille ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
         }
 
         [TestMethod]
         public void GenerateSudokuGrid_Difficutly60()
         {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            try
+            {
+                //Generation de la grille ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
         }
 
 
@@ -49,7 +97,7 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNull(expectedExcetpion);
+            Assert.IsNotNull(expectedExcetpion);
         }
 
         [TestMethod]
@@ -72,7 +120,7 @@ namespace SudokuTest
             }
 
             // Assert
-            Assert.IsNull(expectedExcetpion);
+            Assert.IsNotNull(expectedExcetpion);
         }
 
         [TestMethod]
@@ -81,7 +129,6 @@ namespace SudokuTest
             // Arrange
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             Exception expectedExcetpion = null;
-
 
             // Act
             try
