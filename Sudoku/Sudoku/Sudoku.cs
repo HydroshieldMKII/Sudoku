@@ -131,5 +131,29 @@ namespace Sudoku
 
             return true; // Grid complétée
         }
+
+        public void GenerateSudokuGrid(int difficulty)
+        {
+            // Initialiser la grille
+            this.grid = new int[9, 9];
+            this.difficulty = difficulty;
+
+            FillDiagonal();
+
+            if (!SolveGrid(grid))
+            {
+                throw new InvalidOperationException("Erreur lors de la génération de la grille.");
+            }
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    initialGrid[i, j] = grid[i, j];
+                }
+            }
+
+            RemoveNumbers(difficulty);
+        }
     }
 }
