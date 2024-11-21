@@ -262,12 +262,6 @@ namespace SudokuTest
             Assert.IsNull(exception);
         }
 
-
-
-
-
-
-
         /// ================= FillBox =================
         [TestMethod]
         public void FillBox_ValidParamsFalse()

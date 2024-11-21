@@ -102,6 +102,7 @@ namespace Sudoku
 
         public bool SolveGrid()
         {
+            // Recursion pour résoudre la grille avec backtracking
             for (int row = 0; row < 9; row++)
             {
                 for (int col = 0; col < 9; col++)
@@ -175,6 +176,7 @@ namespace Sudoku
                 throw new ArgumentException("Valeur invalide.");
             }
 
+            validate.IsSafe(Grid, rowIndex, col, value);
             // Mettre à jour la grille avec la valeur du joueur
             Grid[rowIndex, col] = value;
         }

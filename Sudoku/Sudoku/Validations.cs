@@ -13,19 +13,19 @@ namespace Sudoku
         {
             if (IsNumberInRow(grid, row, col))
             {
-                Console.WriteLine("Le nombre est déjà dans la ligne");
+                //Console.WriteLine("Le nombre est déjà dans la ligne");
                 return false;
             }
 
             if (IsNumberInColumn(grid, row, col))
             {
-                Console.WriteLine("Le nombre est déjà dans la colonne");
+                //Console.WriteLine("Le nombre est déjà dans la colonne");
                 return false;
             }
 
             if (IsNumberInSquare(grid, row, col))
             {
-                Console.WriteLine("Le nombre est déjà dans le carré");
+                //Console.WriteLine("Le nombre est déjà dans le carré");
                 return false;
             }
 
