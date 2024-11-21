@@ -6,6 +6,24 @@ namespace SudokuTest
     {
 
         [TestMethod]
+        public void PlayGrid_InitialValue()
+        {
+
+        }
+
+        [TestMethod]
+        public void PlayGrid_ValueEntered()
+        {
+
+        }
+
+        [TestMethod]
+        public void PlayGrid_InvalidPosition()
+        {
+
+        }
+
+        [TestMethod]
         public void RemoveNumbers_NumbersRemoved40()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
