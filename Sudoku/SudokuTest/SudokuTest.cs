@@ -7,49 +7,19 @@ namespace SudokuTest
         [TestMethod]
         public void SolveSudoku_PartiallyResolved()
         {
-            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
-            Exception exception = null;
 
-            try
-            {
-                // Résoudre la grille ici
-            }
-            catch (Exception ex)
-            {
-                exception = ex;
-            }
         }
 
         [TestMethod]
         public void SolveSudoku_NewGrid()
         {
-            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
-            Exception exception = null;
 
-            try
-            {
-                // Résoudre la grille ici
-            }
-            catch (Exception ex)
-            {
-                exception = ex;
-            }
         }
 
         [TestMethod]
         public void SolveSudoku_EmptyGrid()
         {
-            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
-            Exception exception = null;
 
-            try
-            {
-                // Résoudre la grille ici
-            }
-            catch (Exception ex)
-            {
-                exception = ex;
-            }
         }
 
         [TestMethod]
