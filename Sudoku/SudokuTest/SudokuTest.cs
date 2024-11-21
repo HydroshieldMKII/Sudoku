@@ -8,19 +8,67 @@ namespace SudokuTest
         [TestMethod]
         public void PlayGrid_InitialValue()
         {
+            // Arrange
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Grid[0, 0] = 5; // Initial value
+            Exception exception = null;
 
+            // Act
+            try
+            {
+                // Jouer un nombre ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            // Assert
+            Assert.IsNotNull(exception);
+            Assert.AreEqual(5, sudoku.Grid[0, 0]);
         }
 
         [TestMethod]
         public void PlayGrid_ValueEntered()
         {
+            // Arrange
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            // Act
+            try
+            {
+                // Jouer la grille ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            // Assert
+            Assert.IsNull(exception);
+            Assert.AreEqual(3, sudoku.Grid[0, 1]);
         }
 
         [TestMethod]
         public void PlayGrid_InvalidPosition()
         {
+            // Arrange
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
 
+            // Act
+            try
+            {
+                // Invalid position ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            // Assert
+            Assert.IsNotNull(exception);
         }
 
         [TestMethod]
