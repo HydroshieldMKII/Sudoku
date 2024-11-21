@@ -112,14 +112,15 @@ namespace SudokuTest
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             Exception exception = null;
+            bool solved = false;
 
             try
             {
                 // Compléter la grille de jeu
-                //sudoku.Grid[0, 0] = 5;
-                //sudoku.Grid[0, 1] = 3;
-                //sudoku.Grid[1, 0] = 6;
-                //sudoku.SolveSudoku();
+               sudoku.Grid[0, 0] = 5;
+               sudoku.Grid[0, 1] = 3;
+               sudoku.Grid[1, 0] = 6;
+               solved = sudoku.SolveGrid();
             }
             catch (Exception ex)
             {
@@ -127,6 +128,7 @@ namespace SudokuTest
             }
 
             Assert.IsNull(exception);
+            Assert.IsTrue(solved);
         }
 
         [TestMethod]
@@ -134,11 +136,12 @@ namespace SudokuTest
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             Exception exception = null;
+            bool solved = false;
 
             try
             {
                 sudoku.GenerateSudokuGrid(30);
-                sudoku.SolveGrid();
+                solved = sudoku.SolveGrid();
             }
             catch (Exception ex)
             {
@@ -146,6 +149,7 @@ namespace SudokuTest
             }
 
             Assert.IsNull(exception);
+            Assert.IsTrue(solved);
         }
 
         [TestMethod]
@@ -153,17 +157,19 @@ namespace SudokuTest
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
             Exception exception = null;
+            bool solved = false;
 
             try
             {
-                sudoku.SolveGrid();
+                solved = sudoku.SolveGrid();
             }
             catch (Exception ex)
             {
                 exception = ex;
             }
 
-            Assert.IsNotNull(exception);
+            Assert.IsNull(exception);
+            Assert.IsTrue(solved);
         }
 
 
