@@ -20,7 +20,7 @@
   - FillBox_ValidParamsFalse : Considérant un sudoku de 9 carré, les valeurs reçues par la fonction doivent correspondre à un début de carré 3x3
   - FillBox_NotEmpty : Doit se basé sur un carré qui n'a pas déjà été rempli
   - FillBox_Filled : 3 valeurs ont été saisies dans le carré
-- **FillDiagonal (Sudoku)**
+- DONE **FillDiagonal (Sudoku)**
   - FillDiagonal_Filled : 3 carrés doivent avoir reçu des valeurs
 - **GenerateSudokuGrid (Sudoku)**
   - GenerateSudokuGrid_Difficutly30 : Le nombre de cases vides doit correspondre à la difficulté

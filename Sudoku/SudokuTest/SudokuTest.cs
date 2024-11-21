@@ -4,6 +4,12 @@ namespace SudokuTest
     [TestClass]
     public class SudokuTest
     {
+        [TestMethod]
+        public void GenerateSudokuGrid()
+        {
+
+        }
+
         /// ================= FillBox =================
         [TestMethod]
         public void FillBox_ValidParamsFalse()
