@@ -135,12 +135,13 @@ namespace SudokuTest
         public void SolveSudoku_NewGrid()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Difficulty = 40;
             Exception exception = null;
             bool solved = false;
 
             try
             {
-                sudoku.GenerateSudokuGrid(30);
+                sudoku.GenerateSudokuGrid();
                 solved = sudoku.SolveGrid();
             }
             catch (Exception ex)
@@ -178,12 +179,14 @@ namespace SudokuTest
         public void GenerateSudokuGrid_Difficutly30()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Difficulty = 30;
             Exception exception = null;
+
 
             try
             {
                 //Generation de la grille ici
-                sudoku.GenerateSudokuGrid(30);
+                sudoku.GenerateSudokuGrid();
             }
             catch (Exception ex)
             {
@@ -197,12 +200,13 @@ namespace SudokuTest
         public void GenerateSudokuGrid_Difficutly40()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Difficulty = 40;
             Exception exception = null;
 
             try
             {
                 //Generation de la grille ici
-                sudoku.GenerateSudokuGrid(40);
+                sudoku.GenerateSudokuGrid();
             }
             catch (Exception ex)
             {
@@ -216,12 +220,13 @@ namespace SudokuTest
         public void GenerateSudokuGrid_Difficutly50()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Difficulty = 50;
             Exception exception = null;
 
             try
             {
                 //Generation de la grille ici
-                sudoku.GenerateSudokuGrid(50);
+                sudoku.GenerateSudokuGrid();
             }
             catch (Exception ex)
             {
@@ -235,12 +240,13 @@ namespace SudokuTest
         public void GenerateSudokuGrid_Difficutly60()
         {
             Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            sudoku.Difficulty = 60;
             Exception exception = null;
 
             try
             {
                 //Generation de la grille ici
-                sudoku.GenerateSudokuGrid(60);
+                sudoku.GenerateSudokuGrid();
             }
             catch (Exception ex)
             {

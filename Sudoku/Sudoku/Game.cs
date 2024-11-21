@@ -24,13 +24,12 @@ namespace Sudoku
                 switch (choice)
                 {
                     case "1":
-                        //sudoku.GenerateGrid();
-                        sudoku.InitialGrid = sudoku.Grid.Clone() as int[,];
+                        sudoku.GenerateSudokuGrid();
                         printServices.PrintGrid(sudoku.Grid, sudoku.InitialGrid);
+
                         break;
                     case "2":
                         //sudoku.Grid = sFile.LoadGrid();
-                        sudoku.InitialGrid = sudoku.Grid.Clone() as int[,];
                         printServices.PrintGrid(sudoku.Grid, sudoku.InitialGrid);
                         break;
                     case "3":
@@ -54,6 +53,7 @@ namespace Sudoku
                                 Console.WriteLine("Choix invalide");
                                 break;
                         }
+                        printServices.PrintMainMenu();
                         break;
                     case "4":
                         Environment.Exit(0);

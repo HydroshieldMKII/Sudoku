@@ -77,14 +77,13 @@ namespace Sudoku
             //3 carrés doivent avoir reçu des valeurs
             for (int i = 0; i < 9; i += 3)
             {
-                FillBox(grid, i, i);
+                FillBox(Grid, i, i);
             }
         }
 
         public void RemoveNumbers(int emptyCells)
         {
             int removed = 0;
-
             while (removed < emptyCells)
             {
                 // Choisir une rangée et une colonne aléatoire
@@ -132,11 +131,9 @@ namespace Sudoku
             return true; // Grid complétée
         }
 
-        public void GenerateSudokuGrid(int difficulty)
+        public void GenerateSudokuGrid()
         {
             // Initialiser la grille
-            this.grid = new int[9, 9];
-            this.difficulty = difficulty;
             FillDiagonal();
 
             if (!SolveGrid())
@@ -144,15 +141,42 @@ namespace Sudoku
                 throw new InvalidOperationException("Erreur lors de la génération de la grille.");
             }
 
+            RemoveNumbers(Difficulty);
+
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)
                 {
-                    initialGrid[i, j] = Grid[i, j];
+                    InitialGrid[i, j] = Grid[i, j];
                 }
             }
+        }
 
-            RemoveNumbers(difficulty);
+        public void PlayGrid(string row, int col, int value)
+        {
+            // Convertir la rangée en index
+            int rowIndex = row.ToUpper()[0] - 'A';
+
+            // Vérifier si la position est valide
+            if (rowIndex < 0 || rowIndex >= 9 || col < 0 || col >= 9)
+            {
+                throw new ArgumentException("Position invalide.");
+            }
+
+            // Vérifier si la case est une valeur initiale
+            if (InitialGrid[rowIndex, col] != 0)
+            {
+                throw new InvalidOperationException("Impossible de modifier une valeur initiale.");
+            }
+
+            // Vérifier si la valeur est valide
+            if (value < 1 || value > 9)
+            {
+                throw new ArgumentException("Valeur invalide.");
+            }
+
+            // Mettre à jour la grille avec la valeur du joueur
+            Grid[rowIndex, col] = value;
         }
     }
 }
