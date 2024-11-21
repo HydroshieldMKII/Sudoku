@@ -4,6 +4,43 @@ namespace SudokuTest
     [TestClass]
     public class SudokuTest
     {
+
+        [TestMethod]
+        public void RemoveNumbers_NumbersRemoved40()
+        {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
+
+            try
+            {
+                // Supprimer les nombres ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
+        }
+
+        [TestMethod]
+        public void RemoveNumbers_NumbersRemoved50()
+        {
+            Sudoku.Sudoku sudoku = new Sudoku.Sudoku();
+            Exception exception = null;
+
+            try
+            {
+                // Supprimer les nombres ici
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            Assert.IsNull(exception);
+        }
+
         [TestMethod]
         public void SolveSudoku_PartiallyResolved()
         {
@@ -51,6 +88,8 @@ namespace SudokuTest
                 exception = ex;
             }
         }
+
+
 
         [TestMethod]
         public void GenerateSudokuGrid_Difficutly30()
@@ -123,6 +162,11 @@ namespace SudokuTest
 
             Assert.IsNull(exception);
         }
+
+
+
+
+
 
 
         /// ================= FillBox =================
