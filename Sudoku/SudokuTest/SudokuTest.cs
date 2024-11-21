@@ -166,6 +166,7 @@ namespace SudokuTest
             try
             {
                 //Generation de la grille ici
+                sudoku.GenerateSudokuGrid(30);
             }
             catch (Exception ex)
             {
@@ -184,6 +185,7 @@ namespace SudokuTest
             try
             {
                 //Generation de la grille ici
+                sudoku.GenerateSudokuGrid(40);
             }
             catch (Exception ex)
             {
@@ -202,6 +204,7 @@ namespace SudokuTest
             try
             {
                 //Generation de la grille ici
+                sudoku.GenerateSudokuGrid(50);
             }
             catch (Exception ex)
             {
@@ -220,6 +223,7 @@ namespace SudokuTest
             try
             {
                 //Generation de la grille ici
+                sudoku.GenerateSudokuGrid(60);
             }
             catch (Exception ex)
             {
